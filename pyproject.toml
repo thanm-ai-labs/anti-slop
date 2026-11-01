@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anti-slop"
+version = "0.1.0"
+description = "Deterministic content-anti-slop gate for LLM-generated video scripts"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Thanm AI Labs" }]
+keywords = ["llm", "content", "quality", "video", "gate"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Video",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["anti_slop"]
